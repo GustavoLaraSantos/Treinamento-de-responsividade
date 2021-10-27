@@ -1,0 +1,90 @@
+.mediasContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 790px;
+}
+
+.mediasTitle {
+  font-size: 36px;
+  font-style: bold;
+  margin: 30px 0 30px 60px;
+}
+
+.mediasBody {
+  display: flex;
+  flex-direction: row;
+}
+
+.mediasLeftColumn {
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin-left: 60px;
+}
+
+.mediasSubtitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mediasDescrição {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.mediasComentarios {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.mediasFlexBox {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  margin: 10px;
+}
+
+.mediasFoto {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 5px 10px 5px 0px;
+}
+
+.mediasNomeFlex {
+  font-size: 18px;
+}
+
+.mediasComentarioFlex {
+  font-style: italic;
+  text-align: justify;
+}
+
+.mediasRightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 20px;
+}
+
+.mediasProdutos {
+  width: auto;
+  margin: 10px 0px 10px 0px;
+  height: 200px;
+}
+
+.mediasFakeButton {
+  text-decoration: none;
+  color: black;
+  width: 100px;
+  padding: 10px 0px;
+  margin: 10px;
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 5px;
+  transition: 0.3s;
+}
