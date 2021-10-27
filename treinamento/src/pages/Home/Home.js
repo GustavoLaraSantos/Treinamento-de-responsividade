@@ -8,8 +8,7 @@ function Home() {
       <p className="homeTitle" >Escolha uma página</p>
       <div className="linksWrapper" >
         <Link to="estatico" className="homeLink" >Estatico</Link>
-        {/*<Link to="medias" className="homeLink" >@Medias</Link>*/}
-        <Link to="Responsivo" className="homeLink" >Responsivo</Link>
+        <Link to="responsivo" className="homeLink" >Responsivo</Link>
       </div>
       <p className="homeFooter">
         Esse site tem a única função de apresentar técnicas de responsividade,

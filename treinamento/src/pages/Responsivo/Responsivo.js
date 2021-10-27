@@ -7,7 +7,8 @@ function Responsivo() {
   return (
     <div className="responsivoContainer">
       <div className="responsivoTitle">
-        Um produto qualquer
+        <p>Um produto qualquer</p>
+        <img src="/images/Produtos.jpeg" alt="produtos" className="responsivoProdutos" />
       </div>
       <div className="responsivoBody">
         <div className="responsivoLeftColumn">
@@ -21,6 +22,7 @@ function Responsivo() {
             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
+          <Link to="" className="responsivoLink">Clique aqui e garanta já o seu.</Link>
           <p className="responsivoSubtitle">Comentários</p>
           <div className="responsivoComentarios">
             <div className="responsivoComentarioWrapper">
@@ -56,7 +58,7 @@ function Responsivo() {
             defaultValue=""
           />
         </div>
-        <div className="responsivoCompraInfo">
+        <div className="responsivoRightColumn">
           <img src="/images/Produtos.jpeg" alt="produtos" className="responsivoProdutos" />
           <p className="responsivoSubtitle">Compre já por apenas X reais</p>
           <Link to="" className="responsivoFakeButton">Comprar</Link>

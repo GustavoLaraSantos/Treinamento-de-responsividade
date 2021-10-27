@@ -6,9 +6,16 @@
 }
 
 .responsivoTitle {
-  font-size: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
   font-style: bold;
   margin: 30px 0 30px 60px;
+  align-items: center;
+}
+
+.responsivoTitle > img {
+  display: none;
 }
 
 .responsivoBody {
@@ -35,7 +42,9 @@
 .responsivoComentarios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+  row-gap: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .responsivoComentarioWrapper {
@@ -52,15 +61,16 @@
 }
 
 .responsivoNome {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .responsivoTexto {
   font-style: italic;
+  font-size: 1rem;
   text-align: justify;
 }
 
-.responsivoCompraInfo {
+.responsivoRightColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,6 +95,10 @@
   transition: 0.3s;
 }
 
+.responsivoLink {
+  display: none;
+}
+
 @media (max-width: 1080px) {
   .responsivoFoto {
     max-width: 80px;
@@ -94,5 +108,67 @@
 
   .responsivoProdutos {
     height: 150px;
+  }
+}
+
+@media (max-width: 720px) {
+  .responsivoTitle {
+    justify-content: space-between;
+    margin: 30px 40px 0px 40px;
+  }
+
+  .responsivoTitle > img {
+    display: flex;
+  }
+
+  .responsivoDescrição {
+    margin-bottom: 0;
+  }
+
+  .responsivoBody {
+    grid-template-columns: 1fr;
+  }
+
+  .responsivoLink {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .responsivoLeftColumn {
+    margin: 0 40px;
+  }
+
+  .responsivoRightColumn {
+    display: none;
+  }
+
+  .responsivoComentarios {
+    grid-template-columns: 1fr;
+  }
+
+  .responsivoFoto {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 25px;
+  }
+
+  .responsivoProdutos {
+    margin: 0;
+    height: 80px;
+  }
+}
+
+@media (max-width: 360px) {
+  .responsivoTitle {
+    margin: 20px 20px 0px 20px;
+  }
+
+  .responsivoLeftColumn {
+    margin: 0 20px;
   }
 }
